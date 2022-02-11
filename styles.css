@@ -1,0 +1,448 @@
+* {                                                               
+    box-sizing: border-box;                                       
+}                                                                 
+a {                                                               
+    text-decoration: none;                                        
+}                                                                 
+button {                                                          
+    outline: none;                                                
+    border: none;                                                 
+}                                                                 
+.m-0 {                                                            
+    margin: 0 !important;                                         
+}                                                                 
+.mt-0 {                                                           
+    margin-top: 0;                                                
+}                                                                 
+.relative {                                                       
+    position: relative;                                           
+}                                                                 
+.padded {                                                         
+    padding: 1.5rem;                                              
+}                                                                 
+.padded-2 {                                                       
+    padding: 2rem;                                                
+}   
+body {                                                            
+    display: flex;                                                
+    flex-direction: column;                                       
+    background-color: #eeeeee;                                    
+}                                                                 
+main {                                                            
+    margin-top: 50px;                                             
+    display: flex;                                                
+    flex-direction: row;                                          
+    flex: auto;                                                   
+}                                                                 
+article {                                                         
+    margin-right: 25px;                                           
+    padding: 0;                                                   
+    background-color: #fff;                                       
+    flex: 2;                                                      
+    overflow-y: auto;                                             
+}                                                                 
+aside {                                                           
+    background-color: #fff;                                       
+    flex: 1;                                                      
+    overflow-y: auto;                                             
+}                                                                 
+header {                                                          
+    background: linear-gradient(to right, #e60060,#e60060);       
+    border-bottom-left-radius: 25px;                              
+    border-bottom-right-radius: 25px;                             
+    text-align: center;                                           
+    padding: 16px 12px;
+
+}                                                                 
+header a {                                                        
+    color: rgb(233,217,255);                                      
+}                                                                 
+header ul li {                                                    
+    padding: 16px 6px;                                            
+}                                                                 
+                                                                  
+footer {                                                         
+                                                                  
+    height: 60px;                                                
+                                                                  
+    display: flex;                                               
+                                                                  
+    align-items: center;                                         
+                                                                  
+    color: white;                                                
+                                                                  
+    background: #e60060;                                         
+                                                                  
+    padding: 15px;                                               
+                                                                  
+}                                                                
+                                                                  
+footer span:not(.right) {                                        
+                                                                  
+    flex: 1;                                                     
+                                                                  
+}
+                                                               
+}                                                                
+                                                                  
+footer .right {                                                  
+                                                                  
+    text-transform: uppercase;                                   
+                                                                  
+    font-size: small;                                            
+                                                                  
+    font-weight: 800;                                            
+                                                                  
+}                                                                 
+                                                                                                                                                                                                                                                        
+                                                                  
+.profile {                                                        
+    display: flex;                                                
+stify-content: start;                                             
+    align-items: center;                                          
+}
+
+.profile .img {                                                   
+    width: 130px;                                                 
+    height: 130px;                                                
+    border-radius: 50%;                                           
+    overflow: hidden;                                             
+    display: inline-block;                                        
+    border: 5px solid #fff;                                       
+    box-shadow: 1px 2px 4px #d3d3d3;                              
+}                                                                 
+.profile .contents {                                              
+    display: flex;                                                
+    flex-direction: column;                                       
+    justify-content: center;                                      
+    align-items: center;                                          
+    margin-left: 1.5rem;                                          
+}                                                                 
+.profile .contents *:not(:last-child) {                           
+    margin: 0;                                                    
+    margin-bottom: 10px;                                          
+}                                                                 
+.profile .contents .social-icons i {                              
+    font-size: 1.3rem;                                            
+    margin-right: 0.9rem;                                         
+}                                                                 
+.social-icons i {                                                 
+    font-size: 1.2rem;                                            
+    margin-right: 0.7rem;                                         
+}
+.imgs-container {                                                 
+    display: flex;                                                
+    justify-content: space-around;                                
+}                                                                 
+.imgs-container .g-img {                                          
+    overflow: hidden;                                             
+    width: 33.33%;                                                
+    height: 180px;                                                
+    border: 7px solid #fff;                                       
+    box-shadow: 1px 2px 4px #d3d3d3;                              
+    border-radius: 10px;                                          
+    cursor: pointer;                                              
+}                                                                 
+                                                                  
+.imgs-container .g-img:not(:first-child) {                        
+    margin-left: 10px;                                            
+}
+
+}                                                                 
+.imgs-container .g-img.active {                                   
+    background-color: rgba(0, 0, 0, 0.9);                         
+    margin: 0;                                                    
+    min-width: 100%;                                              
+    min-height: 100%;                                             
+    position: fixed;                                              
+    top: 0;                                                       
+    left: 0;                                                      
+    z-index: 100;                                                 
+    overflow: auto;                                               
+    border: none;                                                 
+    box-shadow: none;                                             
+    border-radius: 0;
+}
+
+.g-img.active img {                                               
+    display: block;                                               
+    margin: 80px auto;                                            
+    width: auto;                                                  
+    height: 80%;                                                  
+    border-radius: 10px;                                          
+    animation-name: zoom;                                         
+    animation-duration: 0.7s;                                     
+}                                                                 
+                                                                  
+/* Add Animation - Zoom in the Modal */
+
+                                                                  
+@keyframes zoom {                                                 
+  from {                                                          
+      transform: scale(0);                                        
+  }                                                               
+  to {                                                            
+      transform: scale(1);                                        
+  }                                                               
+}                                                                 
+                                                                  
+.ken-ict-firm {                                                   
+    display: flex;                                                
+}                                                                 
+.ken-ict-img {                                                    
+    width: 200px;                                                 
+    flex: 1;                                                      
+}                                                                 
+.ken-ict-firm .content {                                          
+    flex: 2;                                                      
+}                                                                 
+.btn {                                                            
+    display: inline-block;                                        
+    background: linear-gradient(to right, #ff00cc, #333399);      
+    color: #f8f1ff;                                               
+    padding: 10px 14px;                                           
+    text-decoration: none;                                        
+    border-radius: 5px;                                           
+}                                                                 
+                                                                  
+.mis-vis {                                                        
+    background-color: #f5f7ff;                                    
+    line-height: 1.5rem;                                          
+}                                                                 
+                                                                  
+/* services - ken-ict-firm */
+
+.v-header {                                                       
+    background: #f5f7ff;                                          
+    padding: 1.5rem 0;                                            
+}                                                                 
+.v-header .header-content {                                       
+    text-align: center;                                           
+}                                                                 
+.services-sec {                                                   
+    display: flex;                                                
+    justify-content: space-between;                               
+    margin-top: 1.5rem;                                           
+}                                                                 
+.s-card {                                                         
+    background: #fff;                                             
+    padding: 6px 8px;                                             
+    display: flex;                                                
+    align-items: center;                                          
+    border-left: 3px solid #6800c9;                               
+    box-shadow: 0px 2px 4px #8ca3ff;                              
+                                                                  
+    border-radius: 4px;                                           
+}                                                                 
+.s-card .icon {                                                   
+    background: #f1f4ff;                                          
+    padding: 1rem;                                                
+    margin-right: 5px;                                            
+    border-radius: 50%;                                           
+}                                                                 
+.s-card .icon > i {                                               
+    display: block;                                               
+    color: #6800c9;
+}
+                                                                 
+                                                                  
+/* Footer */                                                      
+.footer-sec {                                                     
+    background-color: #e60060;                                    
+    color: #d3d3d3;                                               
+    display: flex;                                                
+    justify-content: space-around;                                
+    padding: 2rem 3rem;                                           
+    border-radius: 40px 40px 0 0;                                 
+    margin-top: 20px;                                             
+}                                                                 
+.footer-sec a {                                                   
+    color: #d3d3d3;                                               
+}                                                                 
+.footer-sec .contact .link a {                                    
+    display: block;                                               
+    margin-bottom: 0.5rem;                                        
+}                                                                 
+.connect {                                                        
+    text-align: center;                                           
+}                                                                 
+.connect .social-icons a {                                        
+    font-size: 1.2rem;                                            
+}                                                                 
+                                                                  
+#contact-form {                                                   
+    margin: auto;                                                 
+    width: 350px;                                                 
+    border: 1px solid #eeeeee;                                    
+    padding: 18px 14px;                                           
+    border-radius: 5px;
+}
+
+.input-group {                                                    
+    padding-bottom: 1rem;                                         
+    width: 100%;                                                  
+}                                                                 
+.input-control {                                                  
+    display: inline-block;                                        
+    width: 100%;                                                  
+    border: 1px solid #3161ff;                                    
+    padding: 10px 10px;                                           
+    border-radius: 5px;                                           
+}                                                                 
+.input-control:focus {                                            
+    outline: none;                                                
+}                                                                 
+.contact-heading {                                                
+    text-align: center;                                           
+    margin-bottom: 20px;                                          
+}
+
+.submit-btn {                                                     
+    background: linear-gradient(to right, #ff00cc, #333399);      
+    color: #f8f1ff;                                               
+    outline: none;                                                
+    border: none;                                                 
+    padding: 10px 14px;                                           
+    text-decoration: none;                                        
+    border-radius: 5px;                                           
+    cursor: pointer;                                              
+}                                                                 
+                                                                  
+/* mobile view */                                                 
+@media (max-width: 800px) {                                       
+  * {                                                             
+      flex-direction: column;                                     
+      align-items: center;                                        
+      justify-content: space-between;                             
+  }                                                               
+  header ul {                                                     
+      margin-top: 0.7rem;                                         
+  }                                                               
+  ul li > a {                                                     
+      margin: 0;                                                  
+  }                                                               
+  main {                                                          
+      margin-top: 1rem;                                           
+  }
+                                                               
+  .footer-sec .contact {                                          
+      text-align: center;                                         
+  }                                                               
+  .profile {                                                      
+      padding-bottom: 0;                                          
+  }                                                               
+  .profile .contents {                                            
+      margin-left: 0;                                             
+  }                                                               
+                                                                  
+  .imgs-container .g-img {                                        
+      width: 100%;                                                
+      height: auto;                                               
+  }                                                               
+  .imgs-container .g-img:not(:first-child) {                      
+      margin-left: 0;                                             
+      margin-top: 1rem;                                           
+  }                                                               
+  .imgs-container .g-img.active {                                 
+      width: 100%;                                                
+      height: 100%;                                               
+      margin: 0;                                                  
+  }                                                               
+  #contact-form {                                                 
+      width: 280px;                                               
+  }                                                               
+                                                                  
+  .s-card {                                                       
+      width: 100%;                                                
+  }                                                               
+  .s-card:not(:first-child) {                                     
+      margin-top: 1rem;                                           
+  }
+
+                                                                  
+.hero h1 {                                                        
+    text-shadow: 1px 2px 5px #000a;                               
+    text-align: center;                                           
+    position: relative;                                           
+    animation: fadeInTop 1000ms ease backwards;                   
+    animation-delay: 1s;                                          
+}                                                                 
+                                                                  
+.hero h3 {                                                        
+    text-shadow: 1px 2px 5px #000a;                               
+    text-align: center;                                           
+    position: relative;                                           
+    animation: fadeInBottom 1000ms ease 1600ms;                   
+    animation-fill-mode: backwards;                               
+}                                                                 
+                                                                  
+.texts {                                                          
+    padding: 50px;                                                
+}                                                                 
+.texts article {                                                  
+    margin: 80px 0;                                               
+}
+
+                                                                  
+@keyframes fadeInTop {                                            
+    from {                                                        
+        opacity: 0;                                               
+        top: -100px;                                              
+    }                                                             
+    to {                                                          
+        opacity: 1;                                               
+        top: 0px;                                                 
+    }                                                             
+}                                                                 
+                                                                  
+@keyframes fadeInBottom {                                         
+    from {                                                        
+        opacity: 0;                                               
+        top: 100px;                                               
+    }                                                             
+    to {                                                          
+        opacity: 1;                                               
+        top: 0px;                                                 
+    }                                                             
+}                                                                 
+.logo {                                                           
+    font-size: 36px;                                              
+    margin-right: 150px;                                          
+}                                                                 
+                                                                  
+                                                                  
+                                                                  
+.gallery img {                                                    
+    transition: all 300ms ease;
+}
+
+.gallery img.big {                                                
+    position: fixed;                                              
+    top: 50%;                                                     
+    left: 50%;                                                    
+    object-fit: cover;                                            
+    transform: translate(-50%, -50%);                             
+    z-index: 20;                                                  
+}                                                                 
+                                                                  
+.gallery div {                                                    
+    display: grid;                                                
+    grid-template-columns: 1fr 1fr 1fr;                           
+    grid-gap: 10px 10px;                                          
+}                                                                 
+.gallery img.small {                                              
+    width: 100%;                                                  
+}                                                                 
+.blinking{
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: indigo;    }
+    49%{    color: indigo; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: indigo;    }
+}
+
+
+                                                              
